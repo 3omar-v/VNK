@@ -35,9 +35,20 @@ function addToFavorites(id) {
   if (!favorites.includes(id)) {
     favorites.push(id);
     localStorage.setItem("favorites", JSON.stringify(favorites));
-    alert("Added to favorites!");
+    Swal.fire({
+      title: 'ADDED',
+      text: 'Added to Favorits',
+      icon: 'success',
+      confirmButtonText: 'ok'
+    });
+    
   } else {
-    alert("Already in favorites!");
+    Swal.fire({
+      title: 'alredy added',
+      icon: 'warning',
+      confirmButtonText: 'ok'
+    });
+    
   }
 }
 
