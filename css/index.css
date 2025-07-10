@@ -5,23 +5,23 @@ body
 }
 nav
 {
-    background:linear-gradient(45deg,#b518fece,rgb(171, 171, 171));
+    background-color: white;
 }
 nav .box i
 {
-    color: white;
+    color: rgb(3, 114, 218);
 }
 .navbar-brand {
 
-    color: white;
+    color: rgb(3, 114, 218);
 
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
-    color:white;
+    color:rgb(3, 114, 218);
 }
 .box_image
 {
-    background-image: url("./../pexels-creative-vix-9754.jpg");
+    background-image: url("./../images/pic.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
