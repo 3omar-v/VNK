@@ -5,46 +5,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Travel Planner - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="./node_modules/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#" aria-label="Travel Planner Logo with airplane icon">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" style="width:16px; height:16px;">
-                    <path d="M2.5 19.5 21 12 2.5 4.5v7.125L17.625 12 2.5 11.375v7.125z" />
-                </svg>
-                Travel Planner
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="0">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="0">Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="0">My Trips</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="0">Favorites</a>
-                    </li>
-                    <li class="nav-item">
-                        <button class="btn btn-outline-primary" aria-label="Login or Register button" tabindex="0">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" role="img" style="width:16px; height:16px;">
-                                <path d="M10 17l5-5-5-5M15 12H3" />
-                            </svg>
-                            Login/Register
-                        </button>
-                    </li>
-                </ul>
+    <div class="header ">
+        <nav class="navbar navbar-expand-lg navbar-light p-3 ">
+
+            <div class="container-fluid">
+                <div class="box">
+                    <i class="fa-solid fa-plane  "></i>
+                    <a class="navbar-brand" href="home.html">Travel planner</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav text-white">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                        <a class="nav-link" href="./destionations.html">Destinations</a>
+                        <a class="nav-link" href="#">My Trips </a>
+                        <a class="nav-link " href="./favorites.html" tabindex="-1" aria-disabled="true">Favorites</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </nav>
+            
+        </nav>
+    </div>
     <main class="container mt-5">
         <section class="card" role="main" aria-labelledby="welcome-back">
             <header class="card-header">
