@@ -16,8 +16,8 @@ function display(arr) {
     cartoona += `
       <div class="col-md-3 rounded-3 shadow-lg p-4">
         <img src="${arr[i].image}" class="w-100 rounded-3" alt="">               
-        <h5>${arr[i].name}</h5>
-        <p>${arr[i].description.slice(0, 100)}...</p>
+        <h5 class="h5_1">${arr[i].name}</h5>
+        <p class="h5_1">${arr[i].description.slice(0, 100)}...</p>
         <div class="box_btn d-flex justify-content-between">
           <h6 class="p-1 bg-info rounded-4">${arr[i].region}</h6>
           <button class="btn btn-outline-info">View Details</button>

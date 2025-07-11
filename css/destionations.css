@@ -2,7 +2,7 @@ body
 {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(135deg, #6b73ff 0%, #6b46c1aa 100%);
+    background-color: rgb(43, 43, 43);
     height: 100vh;
     color: white;
 }
@@ -12,6 +12,7 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 nav
@@ -50,6 +51,7 @@ i
     align-items: center;
     height: 200px;
     background-color: white;
+    padding: 20px;
 
     .find_1
     {
@@ -64,33 +66,44 @@ i
         {
             border: none;
             border-radius: 3px;
-            width: 120px;
-            height: 30px;
+            width: 200px;
+            height: 40px;
+            border: solid 1px rgb(63, 63, 63);
+            padding: 5px;
         }
 
         input
         {
-            height: 30px;
+            height: 40px;
             border: none;
-            border-radius: 3px ;
-            border: 0.5px solid black;
+            border: 0.5px solid rgb(63, 63, 63);
+            border-radius: 0px;
         }
 
         .clear
         {
             width: 60px;
-            height: 60px;
+            height: 40px;
+            border-radius: 5px;
         }
 
         button
         {
-            margin-left: 20px;
             width: 90px;
-            height: 30px;
+            height: 40px;
             background: white;
-            border-radius: 3px;
-            border: 1px solid rgb(179, 0, 179);
-            color: rgb(179, 0, 179);
+            border: 1px solid rgb(63, 63, 63);
+            transition: all 0.5s;
+            color: rgb(63, 63, 63);
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 0px;
+            border-bottom-left-radius: 0px;
+        }
+        button:hover
+        {
+            background-color: rgb(63, 63, 63);
+            color: white;
         }
     }
 }
@@ -128,4 +141,31 @@ i
             color: rgb(124, 124, 124);
         }
     }
+}
+
+
+.form_1
+{
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+
+    
+    .search_1
+    {
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        border: 1px solid rgb(63, 63, 63);
+        display: flex;
+        align-items: center;
+        i
+        {
+            margin-left: 12px;
+        }
+    }
+}
+
+.h5_1
+{
+    color: black;
 }
